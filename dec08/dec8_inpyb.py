@@ -8,7 +8,7 @@ Original file is located at
 """
 
 import numpy as np
-import pandas as pd
+# import pandas as pd
 
 with open('Dec8.txt','r') as f:
   lines = f.readlines()
@@ -21,7 +21,7 @@ for line in lines[2:]:
   out = line.replace('=','').replace('(','').replace(')','').replace(',','').split()
   map.append(out)
 
-map
+# map
 
 with open('Dec8.txt','r') as f:
   lines = f.readlines()
@@ -61,7 +61,7 @@ while (1):
     print(location)
     break
 
-nsteps
+print(f'Part1: Number of steps {nsteps}')
 
 map[:50]
 
@@ -110,23 +110,5 @@ while (1):
     #print(curloc)
     break
 
-np.lcm.reduce(numz)
+print(f'Part 2: {np.lcm.reduce(numz)}')
 
-np.lcm.reduce(numz)
-
-NumZ [0, 12169, 0, 0, 0, 0]
-NumZ [0, 12169, 0, 13301, 0, 0]
-NumZ [0, 12169, 0, 13301, 14999, 0]
-NumZ [0, 12169, 0, 13301, 14999, 16697]
-NumZ [0, 12169, 17263, 13301, 14999, 16697]
-NumZ [18961, 12169, 17263, 13301, 14999, 16697]
-NumZ [18961, 12169, 17263, 13301, 14999, 16697]
-['LCZ', 'TSQ', 'LVP', 'LNV', 'TLT', 'FCP']
-
-18961
-
-len(instructions)
-
-icnt
-
-F
