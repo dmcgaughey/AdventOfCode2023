@@ -27,7 +27,7 @@ def next_in_sequence(seq):
   return(seq[-1]+last)
 
 import numpy as np
-import pandas as pd
+# import pandas as pd
 
 with open('Dec9.txt','r') as f:
   lines = f.readlines()
@@ -38,7 +38,7 @@ for line in lines:
   cur_sequence = [ int(val) for val in temp]
   next_vals.append(next_in_sequence(cur_sequence))
 
-print(np.sum(next_vals))
+print(f'Part1: {np.sum(next_vals)}')
 
 """## Part 2
 Extrapolate backwards
@@ -63,7 +63,7 @@ def first_in_sequence(seq):
   return(seq[0]-prev_first)
 
 import numpy as np
-import pandas as pd
+# import pandas as pd
 
 with open('Dec9.txt','r') as f:
   lines = f.readlines()
@@ -74,7 +74,7 @@ for line in lines:
   cur_sequence = [ int(val) for val in temp]
   prev_vals.append(first_in_sequence(cur_sequence))
 
-print(np.sum(prev_vals))
+print(f'Part 2:{np.sum(prev_vals)}')
 
 first_in_sequence([0,3,6,9,12])
 
